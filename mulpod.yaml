@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: V1
+metadata:
+  name: mulPod
+spec:
+  containers:
+    - name: c40
+      image: ubuntu
+      command: ["bin/bash","-c","while true; do echo go-ahead; sleep 9 ; done"]
+    - name: c41
+      image: centos
+      command: ["bin/bash","-c","while true; do echo go-ahead; sleep 9 ; done"]
