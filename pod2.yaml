@@ -1,0 +1,11 @@
+kind: pod
+apiVersion: v1
+metadata:
+  name: tetpod2
+spec:
+  containers:
+    - name: c00
+      image: ubuntu 
+      command: ["bin/bash", "-c","while true; do echo yes all corect over; sleep 6 ; done"]
+  restartPolicy: never
+   
