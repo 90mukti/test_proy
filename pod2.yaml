@@ -8,7 +8,3 @@ spec:
       image: ubuntu 
       command: ["bin/bash", "-c","while true; do echo yes all corect over; sleep 6 ; done"]
   restartPolicy: Never
-<<<<<<< HEAD
-   
-=======
->>>>>>> 0e4646995ddc9e897f490dfb916ddbc5408f861a
