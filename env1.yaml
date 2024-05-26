@@ -1,0 +1,14 @@
+Kind: Pod
+apiVersion: v1
+annotaions:
+  description: this is my pod environment
+metadata:
+  name: environments
+spec:
+  containers:
+    - name: c78
+      image: ubuntu
+      command: ["/bin/bash", "-c", "wile true ; do echo hi i i set it bro yeah ; sleep 9 ; done"]
+      env:
+        - name: MY_NAME
+          value: MUKTIKANT_NANDA
