@@ -8,7 +8,7 @@ spec:
   containers:
     - name: c78
       image: ubuntu
-      command: ["/bin/bash", "-c", "wile true ; do echo hi i i set it bro yeah ; sleep 9 ; done"]
+      command: ["/bin/bash", "-c", "while true ; do echo hii set it bro yeah ; sleep 9 ; done"]
       env:
         - name: MY_NAME
           value: MUKTIKANT_NANDA
