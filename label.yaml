@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: kejpod
+  labels:
+    env: daru
+    model: darumodel
+spec:
+  containers:
+    - name: atashigo0
+      image: ubuntu
+      command: ["/bin/bash","while true; do echo ais koi saga nehi jise kejri thaga nehi; sleep 8; done"]
+      ports:
+      - containerPort: 8086
