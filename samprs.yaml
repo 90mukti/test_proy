@@ -8,8 +8,8 @@ spec:
   replicas: 3
   selector:
     matchExpressions: 
-      - {key: tag, operator: In, Values: [msd,vk,rohit,sardul,gambhir]}
-      - {key: tag, operator: NotIn, Values: [others]}
+      - {key: tag, operator: In, values: [msd,vk,rohit,sardul,gambhir]}
+      - {key: tag, operator: NotIn, values: [others]}
   template:
     metadata:
       name: testpo89
