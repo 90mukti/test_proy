@@ -1,0 +1,20 @@
+kind: ReplicationController
+apiVersion: v1
+metadata:
+  name: testreplica
+  labels:
+    tag: mukti's_replica
+spec:
+  replicas: 5
+  selector:
+    tag: mukti's_replica
+  template:
+    metadata:
+      name: testpod43
+      labels:
+        tag: mukti's_replica
+    spec:
+      container:
+        - name: p90
+          image: 90mukti/web
+          command: ["/bin/bash","-c", "while true; do echo all correct bro!!; sleep 9 ; done"]
