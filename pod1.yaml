@@ -5,5 +5,5 @@ metadata:
 spec:
   containers:
     - name: c00
-      image: my-flask-app
+      image: 90mukti/my-flask-app
       command: ["/bin/bash","-c","while true; do echo hi its the perfect book pod; sleep 25; done"]
