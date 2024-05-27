@@ -1,6 +1,6 @@
 kind: Pod
 apiVersion: v1
-annotaions:
+annotations:
   description: this is my pod environment
 metadata:
   name: environments
