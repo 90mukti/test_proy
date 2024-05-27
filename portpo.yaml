@@ -12,11 +12,3 @@ spec:
       image: httpd
       ports:
         - containerPort: 8080
-    - name: y79
-      image: httpd
-      ports:
-        - containerPort: 8081
-    - name: y77
-      image: httpd
-      ports:
-        - containerPort: 8082
