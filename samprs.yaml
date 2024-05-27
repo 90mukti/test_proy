@@ -1,0 +1,30 @@
+kind: ReplicaSet
+apiVersion: apps/v1
+metadata:
+  name: samplers1
+  labels:
+   tag: mukrs
+spec:
+  replicas: 3
+  selector:
+    matchExpressions: {key: tag, operator: In, Values: [msd,vk,rohit,sardul,gambhir]}
+  template:
+    metadata:
+      name: testpo89
+      labels:
+        tag: msd
+    spec:
+      containers: 
+        - name: t67
+          image: 90mukti/web
+          command: ["/bin/bash","-c","while true; do eccho i am perfect ok? ; sleep 10 ; done"]
+  template:
+    metadata:
+      name: testpo89
+      labels:
+        tag: gambhir
+    spec:
+      containers: 
+        - name: t69
+          image: 90mukti/home1
+          command: ["/bin/bash","-c","while true; do eccho he is perfect ok? ; sleep 10 ; done"]
