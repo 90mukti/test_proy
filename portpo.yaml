@@ -4,7 +4,7 @@ metadata:
   name: testpod5
   labels:
     hug: day1
-  annotaions:
+  annotations:
     construction: sobha dreamacers site. prestige heritage city
 spec:
   containers:
