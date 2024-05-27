@@ -1,4 +1,4 @@
-Kind: Pod
+kind: Pod
 apiVersion: v1
 annotaions:
   description: this is my pod environment
