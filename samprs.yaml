@@ -7,7 +7,9 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchExpressions: {key: tag, operator: In, Values: [msd,vk,rohit,sardul,gambhir]}
+    matchExpressions: 
+      - {key: tag, operator: In, Values: [msd,vk,rohit,sardul,gambhir]}
+      - {key: tag, operator: NotIn, Values: [others]}
   template:
     metadata:
       name: testpo89
