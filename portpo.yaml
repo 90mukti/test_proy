@@ -1,0 +1,22 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod5
+  labels:
+    hug: day1
+  annotaions:
+    construction: sobha dreamacers site. prestige heritage city
+spec:
+  containers:
+    - name: y78
+      image: httpd
+      ports:
+        - containerPort: 80
+    - name: y79
+      image: httpd
+      ports:
+        - containerPort: 81
+    - name: y77
+      image: httpd
+      ports:
+        - containerPort: 82
