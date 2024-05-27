@@ -18,13 +18,3 @@ spec:
         - name: t67
           image: 90mukti/web
           command: ["/bin/bash","-c","while true; do echo i am perfect ok? ; sleep 10 ; done"]
-  template:
-    metadata:
-      name: testpo89
-      labels:
-        tag: gambhir
-    spec:
-      containers: 
-        - name: t69
-          image: 90mukti/home1
-          command: ["/bin/bash","-c","while true; do echo he is perfect ok? ; sleep 10 ; done"]
