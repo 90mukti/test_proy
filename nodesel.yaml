@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nodelabel
+  labels:
+    env: development
+spec:
+  containers:
+    - name: y56
+      image: ubuntu
+      command: ["/bin/bash","-c","while true; do echo sahi hei bhai ; sleep 7; done"]
+  nodeSelector:
+    hardware: t2-medium
