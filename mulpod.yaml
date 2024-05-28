@@ -1,12 +1,23 @@
 kind: Pod
-apiVersion: v1
+apiVersion: V1
 metadata:
-  name: mulpod1
+  name: mulPod
 spec:
   containers:
     - name: c40
       image: ubuntu
       command: ["bin/bash","-c","while true; do echo go-ahead; sleep 9 ; done"]
+      resources:
+        requests:
+          ephemeral-storage: "500mi"
+        limits:
+          ephemeral-storage: "800mi"
     - name: c41
       image: centos
       command: ["bin/bash","-c","while true; do echo go-ahead; sleep 9 ; done"]
+      resources:  
+        requests:
+         ephemeral-storage: "500mi"
+        limits:
+          ephemeral-storage: "800mi"
+      
