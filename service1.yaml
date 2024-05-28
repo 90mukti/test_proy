@@ -3,6 +3,10 @@ apiVersion: v1
 metadata:
   name: randserv
 spec:
- command: ["/bin/bash","-c","while true; do echo jay bajrang bali, sleep 6 ; done"]
- selector:
-  tag: hariomm
+  selector:
+    tag: hariomm
+  ports:
+    - protocol: TCP
+      port: 84
+      targetPort: 8084
+  type: ClusterIP      
