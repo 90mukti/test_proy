@@ -9,9 +9,9 @@ spec:
       command: ["bin/bash","-c","while true; do echo go-ahead; sleep 9 ; done"]
       resources:
         requests:
-          ephemeral-storage: "500mi"
+          ephemeral-storage: "500Mi"
         limits:
-          ephemeral-storage: "800mi"
+          ephemeral-storage: "800Mi"
     - name: c41
       image: centos
       command: ["bin/bash","-c","while true; do echo go-ahead; sleep 9 ; done"]
