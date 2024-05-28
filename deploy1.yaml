@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: mydeploy1
+spec:
+  replicas: 4
+  selector:
+    matchLables:
+      tag: hariomm
+  template:
+    metadata:
+      name: gajabpod
+      lables:
+        tag: hariomm
+    spec:
+      containers:
+        - name: ufo90
+          image: 90mukti/my-flask-app
+          command: ["/bin/bash", "-c", "while true; do echo sahi chal raha bencho; sleep 19 ; done"]
