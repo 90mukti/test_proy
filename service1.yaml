@@ -1,0 +1,8 @@
+kind: service
+apiVersion: v1
+metadata:
+  name: randserv
+spec:
+ command: ["/bin/bash","-c","while true; do echo jay bajrang bali, sleep 6 ; done"]
+ selector:
+  tag: hariomm

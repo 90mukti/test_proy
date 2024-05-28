@@ -16,4 +16,4 @@ spec:
       containers:
         - name: ufo90
           image: 90mukti/my-flask-app
-          command: ["/bin/bash", "-c", "while true; do echo sahi chal raha bencho; sleep 19 ; done"]
+          #command: ["/bin/bash", "-c", "while true; do echo sahi chal raha bencho; sleep 19 ; done"]
