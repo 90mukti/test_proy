@@ -5,12 +5,12 @@ metadata:
 spec:
   replicas: 4
   selector:
-    matchLables:
+    matchLabels:
       tag: hariomm
   template:
     metadata:
       name: gajabpod
-      lables:
+      labels:
         tag: hariomm
     spec:
       containers:
