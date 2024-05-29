@@ -1,0 +1,21 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: vollab
+spec:
+  containers:
+    - name: c1
+      image: ubuntu
+      command: ["/bin/bash","-c","while true; do echo game runs; sleep 600 ; done"]
+      volumeMounts:
+        - name: ROM
+          mountPath: "/tmp/jibe"
+    - name: c2
+      image: centos
+      command: ["/bin/bash","-c","while true; do echo game over ; sleep 600 ; done"]
+      volumeMounts:
+        - name: ROM
+          mountPath: "/temp/hot"
+    volumes:
+      - name: ROM
+        emptyDir: {}      
