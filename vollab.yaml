@@ -16,6 +16,9 @@ spec:
       volumeMounts:
         - name: ROM
           mountPath: "/temp/hot"
-    volumes:
-      - name: ROM
-        emptyDir: {}      
+  volumes:
+    - name: ROM
+      emptyDir: {}      
+
+
+        
