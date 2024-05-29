@@ -8,16 +8,16 @@ spec:
       image: ubuntu
       command: ["/bin/bash","-c","while true; do echo game runs; sleep 600 ; done"]
       volumeMounts:
-        - name: ROM
+        - name: rom
           mountPath: "/tmp/jibe"
     - name: c2
       image: centos
       command: ["/bin/bash","-c","while true; do echo game over ; sleep 600 ; done"]
       volumeMounts:
-        - name: ROM
+        - name: rom
           mountPath: "/temp/hot"
   volumes:
-    - name: ROM
+    - name: rom
       emptyDir: {}      
 
 
