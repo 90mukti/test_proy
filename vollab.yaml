@@ -15,7 +15,7 @@ spec:
       command: ["/bin/bash","-c","while true; do echo game over ; sleep 600 ; done"]
       volumeMounts:
         - name: rom
-          mountPath: "/temp/hot"
+          mountPath: "/tmp/hot"
   volumes:
     - name: rom
       emptyDir: {}      
