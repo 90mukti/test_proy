@@ -1,0 +1,25 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: testpervo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tag: testpvol
+  template:
+    metadata:
+      labels:
+        tag: testpvol
+    spec:
+      containers:
+        - name: tcpv90
+          image: ubuntu
+          command: ["/bin/bash","-c","while true, do echo hi test persistent volume; sleep 44 ; done"]
+          volumeMounts:
+            - name: myvol
+              mountPath: "/tmp/yug"
+      volumes:
+        - name: myvol
+          persistentVolumeClaim:
+            claimName: aajtak        

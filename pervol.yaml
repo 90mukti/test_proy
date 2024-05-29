@@ -1,0 +1,13 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata: 
+  name: pervol
+spec:
+  capacity:
+    storage: 1Gi
+  accessMode:
+    - ReadWriteOnce 
+  persistentVolumeclaimPolicy: Recycle
+  awsElasticBlockStore:
+      volumeID: vol-02ac8a20472cc5907
+      fsType: ext4 
