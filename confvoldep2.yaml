@@ -20,5 +20,5 @@ spec:
           - name: MYENV
             valueFrom:
               configMapKeyRef:
-                name: mymap
+                name: mymapvol
                 key: sample.conf
