@@ -19,6 +19,8 @@ spec:
           volumeMounts:
             - name: secretvol
               mountPath: "/tmp/secretdir"
+              readOnly: true
       volumes:
         - name: secretvol
-          secretName: mysecret
+          secret:
+            secretName: mysecret
