@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        chepeti: secretpods
+        tag: secretpods
     spec:
       containers:
         - name: scrt7
