@@ -1,0 +1,28 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: testconfig
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tag: aconfigmap
+  template:
+    metadata:
+      labels:
+        tag: aconfigmap
+    spec:
+      containers:
+        - name: conf08
+          image: centos
+          command: ["/bin/bash","-c","while true; do echo sucessful config; sleep 30; done"]
+          volumeMounts:
+            - name: testconfig1
+              mountPath: "/tmp/config"
+      volumes:
+        - name: testconfig1
+          configMap:
+            name: mymapvol
+            items:
+              - key: sample.conf
+                path: sample.conf              
