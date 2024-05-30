@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        tag: secretdeploy
+        tag: secretpods
     spec:
       containers:
         - name: scrt7
