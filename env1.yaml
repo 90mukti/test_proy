@@ -11,4 +11,5 @@ spec:
       command: ["/bin/bash", "-c", "while true ; do echo hii set it bro yeah ; sleep 9 ; done"]
       env:
         - name: MY_NAME
-          value: MUKTIKANT_NANDA
+          value: MUKTIKANT_NANDA_raja
+          
